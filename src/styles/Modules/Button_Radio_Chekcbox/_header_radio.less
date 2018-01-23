@@ -1,0 +1,50 @@
+
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 28px;
+  height: 30px;
+}
+.checkbox:not(checked) { position: absolute; opacity: 0;}
+.checkbox:not(checked) + label.ios-switch {
+  position: relative; 
+  padding: 0 0 0 60px;
+      display: block;
+    height: 30px;
+}
+.checkbox:not(checked) + label.ios-switch:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  width: 26px;
+  height: 13px;
+  border-radius: 13px;
+  border: 1px solid #444444;
+  border-color: #CDD1DA;
+  box-shadow: #CDD1DA 0px 0px 0px 0px inset;
+  transition: border 0.4s, box-shadow 0.4s;
+  background-color: #444444;
+}
+.checkbox:not(checked) + label.ios-switch:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 2px;
+  height: 2px;
+  border-radius: 10px;
+  border-top: 5px solid #f2f2f2;
+  border-bottom: 5px solid #f2f2f2;
+  border-left: 5px solid #575757;
+  border-right: 5px solid #575757;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s;
+}
+.checkbox:checked + label.ios-switch:before {
+  box-shadow: #444444 0px 0px 0px 16px inset;
+  transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+  background-color: #444444;
+}
+.checkbox:checked + label.ios-switch:after { left: 25px;}

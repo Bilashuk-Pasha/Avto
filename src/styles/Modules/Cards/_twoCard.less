@@ -1,0 +1,19 @@
+.twoCard {
+	.flexbox;
+
+	@media @mobile_580 {
+		.flex-direction(column);
+	}
+
+	&-left {
+		flex: 1;
+		margin-right: 11px;
+
+		@media @mobile_580 {
+			margin-right: 0;
+		}
+	}
+	&-right {
+		flex: 1;
+	} 
+}

@@ -1,0 +1,62 @@
+.header {
+	.flexbox;
+	.justify-content(space-between);
+	.align-items(center);
+	padding:0 51px;
+	height: 52px;
+	background: #333333;
+
+	&-logo {
+
+		&-a {
+			text-decoration:none;
+			color:#fff;
+			font-size: 16px;
+			font-weight:600;
+
+			&:hover {
+				color:red;
+			}
+			&:active {
+				color:#fff;
+			}
+		}
+	}
+	&-settings {
+		display:-webkit-inline-box;
+
+		&-language {
+			.flexbox;
+			margin-left: 12px;
+		}
+
+		&-button {
+			color:#fff;
+			background:red;
+			padding: 8px 12px;
+			font-weight:600;
+			.border-radius(2px);
+
+			&:hover {
+				background: linear-gradient(red,#fff);
+			}
+			&:active {
+				background: linear-gradient(to top,red,#fff);
+			}
+		}
+	}
+}
+.flag1 {
+	display: block;
+	height: 100%;
+	position: relative;
+	top: 12px;
+	left: 22px;
+}
+.flag2 {
+	display: block;
+	height: 100%;
+	position: relative;
+	top: 12px;
+	left: 60px;
+}

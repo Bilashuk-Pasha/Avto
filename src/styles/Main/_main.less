@@ -1,0 +1,28 @@
+.main {
+    .flexbox;
+    flex-wrap:nowrap;
+    padding: 31px 51px;
+    background: rgba(0,0,0,0.3);
+ 
+    @media @mobile_785 {
+        .flex-direction(column);
+    }
+
+    &-left {
+      flex:2; 
+      margin-right: 11px; 
+    }
+
+    &-center {
+        flex:1;
+        margin-right: 11px;
+    }
+
+    &-right {
+        flex:1;
+
+        @media @mobile_1100 {
+            display: none;
+        }
+    }
+}

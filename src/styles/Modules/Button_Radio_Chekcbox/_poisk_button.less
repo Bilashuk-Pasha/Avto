@@ -1,0 +1,22 @@
+.poisk-button {
+	height: 27px;
+	padding-left: 23px;
+	padding-right: 19px;
+	border: 1px solid @color-border;
+	background: linear-gradient(to top, #f1f1f1, #fff);
+	.border-radius(3px);
+	color: @color-osn-text;
+	font-size: @font-size-text;
+	font-weight:600;
+
+    @media @mobile_680 {
+    	margin-right: 4px;
+    	margin-bottom: 2px;
+    }
+    &:hover {
+    	.box-shadow(@hover-button-color);
+    }
+    &:active {
+    	.box-shadow(@active-button-color);
+    }
+}
