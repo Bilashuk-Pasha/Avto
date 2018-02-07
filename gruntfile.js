@@ -102,6 +102,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+    // load npm task
+    grunt.loadNpmTasks('grunt-webp');
+
+    grunt.loadNpmTasks('grunt-webp-compress');
+
     //Register Tasks
     grunt.registerTask('default', ['uglify', 'imagemin', 'jshint', 'less', 'autoprefixer','htmlbuild']);
 };
